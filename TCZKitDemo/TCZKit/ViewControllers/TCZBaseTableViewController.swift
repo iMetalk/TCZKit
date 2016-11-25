@@ -16,10 +16,13 @@ class TCZBaseTableViewController: UIViewController {
     var dataArray = [TCZTableViewItem]()
     var groupDataArray = [Array<TCZTableViewItem>]()
     var cellSet = NSMutableSet()
-
+    
+    var footerDelegate: TCZTableViewFooterable?
+    var headerDelegate: TCZTableViewHeaderable?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white        
+        view.backgroundColor = UIColor.white
     }
     
     // SubClass must impleation this method
@@ -32,7 +35,15 @@ class TCZBaseTableViewController: UIViewController {
     }
     
     func configureData() {
+        // Configure tableView footer
+        if let aFooterDelegate = footerDelegate {
+            self.tableView.tableFooterView = aFooterDelegate.footerView()
+        }
         
+        // Configure tableView header
+        if let aHeaderDelegate = headerDelegate {
+            self.tableView.tableHeaderView = aHeaderDelegate.headerView()
+        }
     }
     
     // MARK: Private
@@ -50,7 +61,6 @@ class TCZBaseTableViewController: UIViewController {
         tableView = UITableView.tczTableView(frame: self.view.bounds, isGroup: isGroup)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ID")
         view.addSubview(tableView)
     }
 

@@ -8,15 +8,20 @@
 
 import UIKit
 
-class TCZFirstViewController: TCZBaseTableViewController {
+class TCZFirstViewController: TCZBaseTableViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.footerDelegate = self
+        self.headerDelegate = self
+        
         loadData(isGroup: false)
     }
     
+    
     override func configureData() {
+        super.configureData()
         for index in 1...10 {
             var item: TCZTableViewItem!
             if index % 2 == 0 {
@@ -31,6 +36,31 @@ class TCZFirstViewController: TCZBaseTableViewController {
         }
         
     }
-
-
 }
+
+extension TCZFirstViewController: TCZTableViewFooterable {
+    
+    func footerView() -> UIView {
+        let size = UIScreen.main.bounds.size
+        let view = TCZActionView(frame: CGRect(x: 0, y: 0, width: size.width, height: TCZConstant.kFooterHeight))
+        view.button.setTitle("确定", for: .normal)
+        view.actionClick = {
+            print("footer click")
+        }
+        return view
+    }
+}
+
+extension TCZFirstViewController: TCZTableViewHeaderable {
+    
+    func headerView() -> UIView {
+        let label = UILabel.tczLabel()
+        label.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 100)
+        label.textColor = UIColor.red
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textAlignment = .center
+        label.text = "Hello, i am a headerView";
+        return label
+    }
+}
+

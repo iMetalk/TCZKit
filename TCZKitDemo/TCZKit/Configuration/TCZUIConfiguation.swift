@@ -14,4 +14,5 @@ struct TCZConstant {
     static public let kLeftEdge: CGFloat = 14
     static public let kFontSize: CGFloat = 15
     static public let kItemSpace: CGFloat = 8
+    static public let kFooterHeight: CGFloat = 120
 }

@@ -8,7 +8,26 @@
 
 import UIKit
 
-protocol TCZTableViewProtocol {
+
+/// The tableView footer
+protocol TCZTableViewFooterable {
     
-    func cellForIndexPath(cellName: String, indexPath: NSIndexPath) -> UITableViewCell;
+    func footerView() -> UIView
+}
+
+extension TCZTableViewFooterable {
+    
+    func footerView() -> UIView {
+        let size = UIScreen.main.bounds.size
+        let view = TCZActionView(frame: CGRect(x: 0, y: 0, width: size.width, height: TCZConstant.kFooterHeight))
+        return view
+
+    }
+}
+
+
+
+protocol TCZTableViewHeaderable {
+    
+    func headerView() -> UIView
 }
