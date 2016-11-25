@@ -28,7 +28,7 @@ class TCZActionView: UIView {
         button = UIButton.tczButton(bgImage: UIImage(named: "redBg"))
         
         button.addTarget(self, action:  #selector(TCZActionView.buttonDidClick), for: .touchUpInside)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.titleLabel?.font = UIFont.tczSystemFontWitSize(fontSize: 18)
         addSubview(button)
         
         button.snp.makeConstraints { (make) in

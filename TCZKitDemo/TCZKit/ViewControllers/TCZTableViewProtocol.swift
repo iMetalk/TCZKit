@@ -9,7 +9,7 @@
 import UIKit
 
 
-/// The tableView footer
+/// TableView footer protocol
 protocol TCZTableViewFooterable {
     
     func footerView() -> UIView
@@ -27,7 +27,10 @@ extension TCZTableViewFooterable {
 
 
 
+/// TableView header protocol
 protocol TCZTableViewHeaderable {
     
     func headerView() -> UIView
 }
+
+

@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-protocol TCZTCZTableViewDataProtocol {
-    
-    var cellName: String{get set}
-    
-}
 
+/// TableView cell type
 enum TCZTableViewCellType {
+    
+    // TCZLeftTitleCell
     case LeftTitle
+    // 
     case LeftImage
+    // TCZImageTitleCell
     case LeftImageTitle
     case LeftAndBottomTitle
     
@@ -35,9 +35,15 @@ enum TCZTableViewCellType {
     }
 }
 
+
+/// TableView dataSource, you must use TCZTableViewItem as tableView dataSouce
 struct TCZTableViewItem {
+    // Cell type
     let type: TCZTableViewCellType
+    // The left title
     var title: String?
+    // The left image
     var image: UIImage?
+    // The bottom title
     var bottomTitle: String?
 }

@@ -13,6 +13,8 @@ class TCZFirstViewController: TCZBaseTableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "TCZFirstViewController"
+        
         self.footerDelegate = self
         self.headerDelegate = self
         
@@ -32,7 +34,7 @@ class TCZFirstViewController: TCZBaseTableViewController{
             }
             
             dataArray.append(item)
-            cellSet.add(item.type.cellName)
+            cellIndentifierSet.insert(item.type.cellName)
         }
         
     }
@@ -44,6 +46,7 @@ extension TCZFirstViewController: TCZTableViewFooterable {
         let size = UIScreen.main.bounds.size
         let view = TCZActionView(frame: CGRect(x: 0, y: 0, width: size.width, height: TCZConstant.kFooterHeight))
         view.button.setTitle("确定", for: .normal)
+        view.backgroundColor = UIColor.lightGray
         view.actionClick = {
             print("footer click")
         }
@@ -60,6 +63,7 @@ extension TCZFirstViewController: TCZTableViewHeaderable {
         label.font = UIFont.systemFont(ofSize: 18)
         label.textAlignment = .center
         label.text = "Hello, i am a headerView";
+        label.backgroundColor = UIColor.lightGray
         return label
     }
 }

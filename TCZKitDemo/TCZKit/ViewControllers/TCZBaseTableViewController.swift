@@ -12,19 +12,40 @@ import UIKit
 class TCZBaseTableViewController: UIViewController {
     
     var tableView: UITableView!
+    
+    
+    /// TableView is pain or group
     var isGroup = false
+    
+    /// If you set more than 0, tableView will automatic calculation height
+    var estimatedRowHeight: CGFloat = 0
+    
+    /// If tableView is plain, you must user dataArray, or you must use groupDataArray, as tableView dataSource
     var dataArray = [TCZTableViewItem]()
     var groupDataArray = [Array<TCZTableViewItem>]()
-    var cellSet = NSMutableSet()
     
+    /// You should set cellIndentifierSet when you configure tableView dataSource, this will use to register cell to tableView. You should use cell name as the cell indentifier
+    var cellIndentifierSet: Set<String> = []
+    
+    
+    /// TableView footer delegate, if you set footerDelegate, the tableView will have a footer
     var footerDelegate: TCZTableViewFooterable?
+    
+    /// TableView header delegate, if you set headerDelegate, the tableView will have a header
     var headerDelegate: TCZTableViewHeaderable?
     
+    
+    /// TableViewCell height, default is 44, you can change this
+    var rowHeight: CGFloat = TCZConstant.kRowHeight
+    
+    
+    // MARK: ViewController life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
     }
     
+    // MARK: Public
     // SubClass must impleation this method
     func loadData(isGroup: Bool) {
         self.isGroup = isGroup
@@ -48,10 +69,8 @@ class TCZBaseTableViewController: UIViewController {
     
     // MARK: Private
     private func registerCells() {
-        for cellName in cellSet {
-            if let aCellName = cellName as? String {
-                tableView.register(NSClassFromString(aCellName), forCellReuseIdentifier: aCellName)
-            }
+        for cellName in cellIndentifierSet {
+           tableView.register(NSClassFromString(cellName), forCellReuseIdentifier: cellName)
         }
     }
     
@@ -61,6 +80,13 @@ class TCZBaseTableViewController: UIViewController {
         tableView = UITableView.tczTableView(frame: self.view.bounds, isGroup: isGroup)
         tableView.delegate = self
         tableView.dataSource = self
+        if estimatedRowHeight > 0 {
+            tableView.estimatedRowHeight = estimatedRowHeight
+            tableView.rowHeight = UITableViewAutomaticDimension
+        }
+        else{
+            tableView.rowHeight = rowHeight
+        }
         view.addSubview(tableView)
     }
 
@@ -99,6 +125,10 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tczCellReuse(cell: TCZBaseCell, atIndexPath: IndexPath, item: TCZTableViewItem) {
