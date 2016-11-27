@@ -23,23 +23,23 @@
 
 #### CocoaPods
 
-```
-platform :ios, '8.0'
-pod 'TCZKit', '~>1.0'
-```
+<!--```-->
+<!--platform :ios, '8.0'-->
+<!--pod 'TCZKit', '~>1.0'-->
+<!--```-->
 #### Carthage
 
 #开始使用
 
-####主要文件说明：   
+####主要文件说明
 
-`Configuration\TCZConstant.swift`: 主要的常量
-`Extension`: 扩展，主要用于创建UI元素
-`Utils`: 工具，常见的View
-`ViewControllers\TCZBaseTableViewController.swift`: 你所创建的视图控制器必须继承自`TCZBaseTableViewController`
-`ViewControllers\TCZTableViewData.swift`:创建Cell的数据源
-`ViewControllers\TCZTableViewDelegate.swift`:主要的协议
-`Views\Cells`: 所有的Cell，若果创建自定义的Cell，必须继承到`TCZBaseCell.swift`
+- `Configuration\TCZConstant.swift`: 主要的常量
+- `Extension`: 扩展，主要用于创建UI元素
+- `Utils`: 工具，常见的View
+- `ViewControllers\TCZBaseTableViewController.swift`: 你所创建的视图控制器必须继承自`TCZBaseTableViewController`
+- `ViewControllers\TCZTableViewData.swift`:创建Cell的数据源
+- `ViewControllers\TCZTableViewDelegate.swift`:主要的协议
+- `Views\Cells`: 所有的Cell，若果创建自定义的Cell，必须继承到`TCZBaseCell.swift`
 
 ####数据源
 `TCZTableViewItem`: 最基本的数据源，你所创建的Cell，必须通过配置数据源`TCZTableViewItem`,这样`TCZKit`才能正常解析。
