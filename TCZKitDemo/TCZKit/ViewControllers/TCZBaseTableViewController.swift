@@ -20,6 +20,21 @@ class TCZBaseTableViewController: UIViewController {
     /// If you set more than 0, tableView will automatic calculation height
     var estimatedRowHeight: CGFloat = 0
     
+    /// TableView header section height, if the value is more than zero, it will have header sectionView
+    var headerSectionHeight: CGFloat = 0
+    
+    /// TableView header sectionView type
+    var headerSectionType: TCZSectionType = .Title
+    
+    /// TableView footer section height, if the value is more than zero, it will have footer sectionView
+    var footerSectionHeight: CGFloat = 0
+    
+    /// TableView footer sectionView type
+    var footerSectionType: TCZSectionType = .Title
+    
+    /// Is open edit mode delete
+    var isOpendDelete: Bool = false
+    
     /// If tableView is plain, you must user dataArray, or you must use groupDataArray, as tableView dataSource
     var dataArray = [TCZTableViewItem]()
     var groupDataArray = [Array<TCZTableViewItem>]()
@@ -52,6 +67,7 @@ class TCZBaseTableViewController: UIViewController {
         createUI()
         configureData()
         registerCells()
+        registerSectionView()
         tableView.reloadData()
     }
     
@@ -74,6 +90,21 @@ class TCZBaseTableViewController: UIViewController {
         }
     }
     
+    private func registerSectionView() {
+        guard headerSectionHeight > 0 else {
+            return
+        }
+        tableView.register(NSClassFromString(headerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: headerSectionType.sectionViewName)
+        
+        guard footerSectionHeight > 0 else {
+            return
+        }
+        
+        guard headerSectionType != footerSectionType else {
+            return
+        }
+        tableView.register(NSClassFromString(footerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: footerSectionType.sectionViewName)
+    }
     
     // MARK - CreateUI
     private func createUI() {
@@ -123,15 +154,105 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
             tczCellReuse(cell: baseCell, atIndexPath: indexPath, item: aItem)
         }
         
-        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard headerSectionHeight > 0 else {
+            return nil
+        }
+        
+        if let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerSectionType.sectionViewName){
+            if let aSectionView = sectionView as? TCZSectionTitleView {
+                aSectionView.title = "I am a header sectionView title, i am so easy to create";
+            }
+            tczHeaderSectionView(sectionView: sectionView)
+            
+            return sectionView
+        }
+        
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return headerSectionHeight
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard footerSectionHeight > 0 else {
+            return nil
+        }
+        
+        if let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: footerSectionType.sectionViewName){
+            if let aSectionView = sectionView as? TCZSectionTitleView {
+                aSectionView.title = "I am a footer sectionView title, i am so easy to create";
+            }
+            tczFooterSectionView(sectionView: sectionView)
+            
+            return sectionView
+        }
+        
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return footerSectionHeight
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return isOpendDelete
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        guard isOpendDelete else {
+            return .none
+        }
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        guard isOpendDelete else {
+            return
+        }
+        
+        if editingStyle == .delete{
+            tczDidDelete(atIndexPath: indexPath)
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func tczCellReuse(cell: TCZBaseCell, atIndexPath: IndexPath, item: TCZTableViewItem) {
-        
+    /// MARK: SubClass can implementation
+    func tczCellReuse(cell: TCZBaseCell, atIndexPath: IndexPath, item: TCZTableViewItem) {}
+    
+    func tczHeaderSectionView(sectionView: UIView) {}
+    
+    func tczFooterSectionView(sectionView: UIView) {}
+    
+    func tczDidDelete(atIndexPath indexPath: IndexPath) {}
+    
+    func tczDeleteLocalData(atIndexPath indexPath: IndexPath, animation: UITableViewRowAnimation) {
+        if isGroup {
+            guard indexPath.section < groupDataArray.count else {
+                return
+            }
+            
+            guard indexPath.row < groupDataArray[indexPath.section].count else {
+                return
+            }
+            
+            var sectionDatas = groupDataArray[indexPath.section]
+            sectionDatas.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: animation)
+        }
+        else{
+            guard indexPath.row < dataArray.count else {
+                return
+            }
+            dataArray.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: animation)
+        }
     }
 }

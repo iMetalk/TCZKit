@@ -18,6 +18,11 @@ class TCZFirstViewController: TCZBaseTableViewController{
         self.footerDelegate = self
         self.headerDelegate = self
         
+        self.headerSectionHeight = 44.0
+        self.footerSectionHeight = 44.0
+        
+        self.isOpendDelete = true
+        
         loadData(isGroup: false)
     }
     
@@ -37,6 +42,10 @@ class TCZFirstViewController: TCZBaseTableViewController{
             cellIndentifierSet.insert(item.type.cellName)
         }
         
+    }
+    
+    override func tczDidDelete(atIndexPath indexPath: IndexPath) {
+        tczDeleteLocalData(atIndexPath: indexPath, animation: .left)
     }
 }
 

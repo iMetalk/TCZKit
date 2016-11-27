@@ -47,3 +47,17 @@ struct TCZTableViewItem {
     // The bottom title
     var bottomTitle: String?
 }
+
+
+
+/// TableView section view type
+enum TCZSectionType {
+    case Title
+    
+    var sectionViewName: String {
+        switch self {
+        case .Title:
+            return NSStringFromClass(TCZSectionTitleView.self)
+        }
+    }
+}

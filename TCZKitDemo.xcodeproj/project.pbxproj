@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		239162691DEA8440000A541C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 239162681DEA8440000A541C /* logo.png */; };
+		2391626C1DEAF49D000A541C /* TCZSectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */; };
 		23996DF41DE6CA7E009A001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF31DE6CA7E009A001F /* AppDelegate.swift */; };
 		23996DF61DE6CA7E009A001F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF51DE6CA7E009A001F /* ViewController.swift */; };
 		23996DF91DE6CA7E009A001F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23996DF71DE6CA7E009A001F /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		0B0B7B1E2D0CB1CC1FCB47FA /* Pods-TCZKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemo/Pods-TCZKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		0C53290616CB76605B762381 /* Pods_TCZKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCZKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		239162681DEA8440000A541C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZSectionTitleView.swift; sourceTree = "<group>"; };
 		23996DF01DE6CA7E009A001F /* TCZKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCZKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23996DF31DE6CA7E009A001F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23996DF51DE6CA7E009A001F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2391626A1DEAF46D000A541C /* HeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */,
+			);
+			path = HeaderFooterView;
+			sourceTree = "<group>";
+		};
 		23996DE71DE6CA7E009A001F = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +316,7 @@
 		23996E381DE6CCCB009A001F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2391626A1DEAF46D000A541C /* HeaderFooterView */,
 				23996E391DE6CCCB009A001F /* Cells */,
 			);
 			path = Views;
@@ -637,6 +648,7 @@
 				23996E421DE6CCCB009A001F /* TCZStackView.swift in Sources */,
 				23996E4A1DE6CCF8009A001F /* README.md in Sources */,
 				23996E431DE6CCCB009A001F /* TCZBaseTableViewController.swift in Sources */,
+				2391626C1DEAF49D000A541C /* TCZSectionTitleView.swift in Sources */,
 				23996E451DE6CCCB009A001F /* TCZTableViewDelegate.swift in Sources */,
 				23996E4C1DE6CD5A009A001F /* TCZFirstViewController.swift in Sources */,
 			);
