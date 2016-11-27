@@ -12,13 +12,23 @@
 
 #安装
 
-`TCZKit` 支持 iOS 8.0 或 iOS8.0 以上的系统，Swift3.0。主要有以下三种方式继承
-
+`TCZKit` 支持 iOS 8.0 或 iOS8.0 以上的系统，Swift3.0。
+主要有以下三种方式集成:
+- 手动集成`TCZKit`
+- CocoaPods
+- Carthage
 
 #### 手动安装
 下载 `TCZKitDemo` 到本地，直接将 `TCZKit` 复制到项目中。`TCZKit`使用 `SnapKit` 作为自动布局,  如果你的项目中没有集成过[SnapKit](https://github.com/SnapKit/SnapKit)，需要集成。
 
-#### Pod集成
+#### CocoaPods
+
+```
+platform :ios, '8.0'
+pod 'TCZKit', '~>1.0'
+
+```
+#### Carthage
 
 #开始使用
 ####主要文件说明：   
