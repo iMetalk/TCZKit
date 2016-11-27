@@ -1,9 +1,9 @@
 # TCZKit
 ####一种简单、快捷的方式创建UI
-做[觅友购](https://itunes.apple.com/cn/app/mi-you-gou/id1168242067?l=en&mt=8)和 [密语](https://itunes.apple.com/cn/app/mi-yu-ji-zhi-an-quan/id954996058?mt=8)和[密语](https://itunes.apple.com/cn/app/mi-yu-ji-zhi-an-quan/id954996058?mt=8)项目时，我发现我们的一半或者更多的时间都在做`UI`方面的事情，但是发现这些页面很相似，虽然使用了继承，减少了很多工作量，但是感觉这种实现方式很不好，使用起来也不友好，于是我们团队就想做一个框架来快速的创建UI。做到简单快捷。
+做 [觅友购](https://itunes.apple.com/cn/app/mi-you-gou/id1168242067?l=en&mt=8) 和 [密语](https://itunes.apple.com/cn/app/mi-yu-ji-zhi-an-quan/id954996058?mt=8) 项目时，我发现我们的一半或者更多的时间都在做`UI`方面的事情，但是发现这些页面很相似，虽然使用了继承，减少了很多工作量，但是感觉这种实现方式很不好，使用起来也不友好，于是我们团队就想做一个框架来快速的创建UI。做到简单快捷。
 
 #说明
-`TCZKit`是为了能够更简单的搭建UI，由 `MeTalk（iOS）`团队开发，将会成为 [觅友购](https://itunes.apple.com/cn/app/mi-you-gou/id1168242067?l=en&mt=8)和 [密语](https://itunes.apple.com/cn/app/mi-yu-ji-zhi-an-quan/id954996058?mt=8)项目主要的UI框架。如果您在使用的过程中有什么问题，都可以和我们联系，邮箱地址`iMetalk@163.com`。
+`TCZKit`是为了能够更简单的搭建UI，由 `MeTalk（iOS）`团队开发，将会成为 [觅友购](https://itunes.apple.com/cn/app/mi-you-gou/id1168242067?l=en&mt=8) 和 [密语](https://itunes.apple.com/cn/app/mi-yu-ji-zhi-an-quan/id954996058?mt=8) 项目主要的UI框架。如果您在使用的过程中有什么问题，都可以和我们联系，邮箱地址`iMetalk@163.com`。
 
 #安装
 #### 手动安装
