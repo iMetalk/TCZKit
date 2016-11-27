@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		239162691DEA8440000A541C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 239162681DEA8440000A541C /* logo.png */; };
 		23996DF41DE6CA7E009A001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF31DE6CA7E009A001F /* AppDelegate.swift */; };
 		23996DF61DE6CA7E009A001F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF51DE6CA7E009A001F /* ViewController.swift */; };
 		23996DF91DE6CA7E009A001F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23996DF71DE6CA7E009A001F /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		0B0B7B1E2D0CB1CC1FCB47FA /* Pods-TCZKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemo/Pods-TCZKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		0C53290616CB76605B762381 /* Pods_TCZKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCZKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239162681DEA8440000A541C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		23996DF01DE6CA7E009A001F /* TCZKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCZKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23996DF31DE6CA7E009A001F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23996DF51DE6CA7E009A001F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		23996DE71DE6CA7E009A001F = {
 			isa = PBXGroup;
 			children = (
+				239162681DEA8440000A541C /* logo.png */,
 				23996E491DE6CCF8009A001F /* README.md */,
 				23996DF21DE6CA7E009A001F /* TCZKitDemo */,
 				23996E071DE6CA7E009A001F /* TCZKitDemoTests */,
@@ -467,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				239162691DEA8440000A541C /* logo.png in Resources */,
 				23996DFE1DE6CA7E009A001F /* LaunchScreen.storyboard in Resources */,
 				23996DFB1DE6CA7E009A001F /* Assets.xcassets in Resources */,
 				23996DF91DE6CA7E009A001F /* Main.storyboard in Resources */,
