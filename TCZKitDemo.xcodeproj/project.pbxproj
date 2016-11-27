@@ -22,8 +22,8 @@
 		23996E411DE6CCCB009A001F /* UITableView+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E2E1DE6CCCB009A001F /* UITableView+TCZ.swift */; };
 		23996E421DE6CCCB009A001F /* TCZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E331DE6CCCB009A001F /* TCZStackView.swift */; };
 		23996E431DE6CCCB009A001F /* TCZBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E351DE6CCCB009A001F /* TCZBaseTableViewController.swift */; };
-		23996E441DE6CCCB009A001F /* TCZTableViewDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E361DE6CCCB009A001F /* TCZTableViewDataProtocol.swift */; };
-		23996E451DE6CCCB009A001F /* TCZTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E371DE6CCCB009A001F /* TCZTableViewProtocol.swift */; };
+		23996E441DE6CCCB009A001F /* TCZTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E361DE6CCCB009A001F /* TCZTableViewData.swift */; };
+		23996E451DE6CCCB009A001F /* TCZTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E371DE6CCCB009A001F /* TCZTableViewDelegate.swift */; };
 		23996E461DE6CCCB009A001F /* TCZBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E3A1DE6CCCB009A001F /* TCZBaseCell.swift */; };
 		23996E471DE6CCCB009A001F /* TCZImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E3B1DE6CCCB009A001F /* TCZImageTitleCell.swift */; };
 		23996E481DE6CCCB009A001F /* TCZLeftTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E3C1DE6CCCB009A001F /* TCZLeftTitleCell.swift */; };
@@ -77,8 +77,8 @@
 		23996E2E1DE6CCCB009A001F /* UITableView+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+TCZ.swift"; sourceTree = "<group>"; };
 		23996E331DE6CCCB009A001F /* TCZStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZStackView.swift; sourceTree = "<group>"; };
 		23996E351DE6CCCB009A001F /* TCZBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseTableViewController.swift; sourceTree = "<group>"; };
-		23996E361DE6CCCB009A001F /* TCZTableViewDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewDataProtocol.swift; sourceTree = "<group>"; };
-		23996E371DE6CCCB009A001F /* TCZTableViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewProtocol.swift; sourceTree = "<group>"; };
+		23996E361DE6CCCB009A001F /* TCZTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewData.swift; sourceTree = "<group>"; };
+		23996E371DE6CCCB009A001F /* TCZTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewDelegate.swift; sourceTree = "<group>"; };
 		23996E3A1DE6CCCB009A001F /* TCZBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseCell.swift; sourceTree = "<group>"; };
 		23996E3B1DE6CCCB009A001F /* TCZImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZImageTitleCell.swift; sourceTree = "<group>"; };
 		23996E3C1DE6CCCB009A001F /* TCZLeftTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZLeftTitleCell.swift; sourceTree = "<group>"; };
@@ -297,8 +297,8 @@
 			isa = PBXGroup;
 			children = (
 				23996E351DE6CCCB009A001F /* TCZBaseTableViewController.swift */,
-				23996E361DE6CCCB009A001F /* TCZTableViewDataProtocol.swift */,
-				23996E371DE6CCCB009A001F /* TCZTableViewProtocol.swift */,
+				23996E361DE6CCCB009A001F /* TCZTableViewData.swift */,
+				23996E371DE6CCCB009A001F /* TCZTableViewDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -622,7 +622,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23996E3F1DE6CCCB009A001F /* UIImageView+TCZ.swift in Sources */,
-				23996E441DE6CCCB009A001F /* TCZTableViewDataProtocol.swift in Sources */,
+				23996E441DE6CCCB009A001F /* TCZTableViewData.swift in Sources */,
 				23996E3E1DE6CCCB009A001F /* UIFont+TCZ.swift in Sources */,
 				23996E471DE6CCCB009A001F /* TCZImageTitleCell.swift in Sources */,
 				23996DF61DE6CA7E009A001F /* ViewController.swift in Sources */,
@@ -637,7 +637,7 @@
 				23996E421DE6CCCB009A001F /* TCZStackView.swift in Sources */,
 				23996E4A1DE6CCF8009A001F /* README.md in Sources */,
 				23996E431DE6CCCB009A001F /* TCZBaseTableViewController.swift in Sources */,
-				23996E451DE6CCCB009A001F /* TCZTableViewProtocol.swift in Sources */,
+				23996E451DE6CCCB009A001F /* TCZTableViewDelegate.swift in Sources */,
 				23996E4C1DE6CD5A009A001F /* TCZFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

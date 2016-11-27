@@ -1,5 +1,5 @@
 //
-//  TCZTableViewDataProtocol.swift
+//  TCZTableViewData.swift
 //  TCZGenerateUIDemo
 //
 //  Created by WangSuyan on 2016/11/14.
