@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2339B5411DED7E640008461E /* TCZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339B5401DED7E640008461E /* TCZMainViewController.swift */; };
+		2339B5431DED7E730008461E /* TCZPlainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339B5421DED7E730008461E /* TCZPlainViewController.swift */; };
+		2339B5451DED7E7D0008461E /* TCZGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339B5441DED7E7D0008461E /* TCZGroupViewController.swift */; };
 		239162691DEA8440000A541C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 239162681DEA8440000A541C /* logo.png */; };
 		2391626C1DEAF49D000A541C /* TCZSectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */; };
 		23996DF41DE6CA7E009A001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF31DE6CA7E009A001F /* AppDelegate.swift */; };
@@ -57,6 +60,9 @@
 /* Begin PBXFileReference section */
 		0B0B7B1E2D0CB1CC1FCB47FA /* Pods-TCZKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemo/Pods-TCZKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		0C53290616CB76605B762381 /* Pods_TCZKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TCZKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2339B5401DED7E640008461E /* TCZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZMainViewController.swift; sourceTree = "<group>"; };
+		2339B5421DED7E730008461E /* TCZPlainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZPlainViewController.swift; sourceTree = "<group>"; };
+		2339B5441DED7E7D0008461E /* TCZGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZGroupViewController.swift; sourceTree = "<group>"; };
 		239162681DEA8440000A541C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZSectionTitleView.swift; sourceTree = "<group>"; };
 		23996DF01DE6CA7E009A001F /* TCZKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCZKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +174,9 @@
 				23996DFC1DE6CA7E009A001F /* LaunchScreen.storyboard */,
 				23996DFF1DE6CA7E009A001F /* Info.plist */,
 				23996E4B1DE6CD5A009A001F /* TCZFirstViewController.swift */,
+				2339B5401DED7E640008461E /* TCZMainViewController.swift */,
+				2339B5421DED7E730008461E /* TCZPlainViewController.swift */,
+				2339B5441DED7E7D0008461E /* TCZGroupViewController.swift */,
 			);
 			path = TCZKitDemo;
 			sourceTree = "<group>";
@@ -632,9 +641,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2339B5451DED7E7D0008461E /* TCZGroupViewController.swift in Sources */,
 				23996E3F1DE6CCCB009A001F /* UIImageView+TCZ.swift in Sources */,
 				23996E441DE6CCCB009A001F /* TCZTableViewData.swift in Sources */,
 				23996E3E1DE6CCCB009A001F /* UIFont+TCZ.swift in Sources */,
+				2339B5411DED7E640008461E /* TCZMainViewController.swift in Sources */,
 				23996E471DE6CCCB009A001F /* TCZImageTitleCell.swift in Sources */,
 				23996DF61DE6CA7E009A001F /* ViewController.swift in Sources */,
 				23D70EDF1DE81E5100A7E147 /* UIButton+TCZ.swift in Sources */,
@@ -646,6 +657,7 @@
 				23996E411DE6CCCB009A001F /* UITableView+TCZ.swift in Sources */,
 				23996DF41DE6CA7E009A001F /* AppDelegate.swift in Sources */,
 				23996E421DE6CCCB009A001F /* TCZStackView.swift in Sources */,
+				2339B5431DED7E730008461E /* TCZPlainViewController.swift in Sources */,
 				23996E4A1DE6CCF8009A001F /* README.md in Sources */,
 				23996E431DE6CCCB009A001F /* TCZBaseTableViewController.swift in Sources */,
 				2391626C1DEAF49D000A541C /* TCZSectionTitleView.swift in Sources */,
@@ -803,6 +815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D47CZT3KBD;
 				INFOPLIST_FILE = TCZKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wsy.TCZKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -817,6 +830,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D47CZT3KBD;
 				INFOPLIST_FILE = TCZKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wsy.TCZKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

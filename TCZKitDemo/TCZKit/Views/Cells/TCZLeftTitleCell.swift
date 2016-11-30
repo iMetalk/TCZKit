@@ -25,6 +25,8 @@ class TCZLeftTitleCell: TCZBaseCell {
     }()
     
     override func tczCreateBaseCellUI() {
+        accessoryType = .disclosureIndicator
+        
         // Title label
         contentView.addSubview(self.titleLabel)
         titleLabel.snp.makeConstraints { (make) in
