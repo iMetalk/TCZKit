@@ -13,7 +13,6 @@ class TCZBaseTableViewController: UIViewController {
     
     var tableView: UITableView!
     
-    
     /// TableView is pain or group
     var isGroup = false
     
@@ -48,10 +47,6 @@ class TCZBaseTableViewController: UIViewController {
     
     /// TableView header delegate, if you set headerDelegate, the tableView will have a header
     var headerDelegate: TCZTableViewHeaderable?
-    
-    
-    /// TableViewCell height, default is 44, you can change this
-    var rowHeight: CGFloat = TCZConstant.kRowHeight
     
     
     // MARK: ViewController life cycle
@@ -115,9 +110,6 @@ class TCZBaseTableViewController: UIViewController {
             tableView.estimatedRowHeight = estimatedRowHeight
             tableView.rowHeight = UITableViewAutomaticDimension
         }
-        else{
-            tableView.rowHeight = rowHeight
-        }
         view.addSubview(tableView)
     }
 
@@ -140,13 +132,8 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let aItem: TCZTableViewData!
-        if isGroup {
-            aItem = groupDataArray[indexPath.section][indexPath.row]
-        }else{
-            aItem = dataArray[indexPath.row]
-        }
-        
+        let aItem: TCZTableViewData = dataAtIndexPath(indexPath: indexPath)
+
         let cell = tableView.dequeueReusableCell(withIdentifier: aItem.type.cellName, for: indexPath)
         if let baseCell = cell as? TCZBaseCell{
             baseCell.tczConfigureData(aItem: aItem)
@@ -220,6 +207,10 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
         }
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return dataAtIndexPath(indexPath: indexPath).cellHeight
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -254,5 +245,16 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
             dataArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: animation)
         }
+    }
+    
+    /// MARK: Helper
+    func dataAtIndexPath(indexPath: IndexPath) -> TCZTableViewData {
+        let aItem: TCZTableViewData!
+        if isGroup {
+            aItem = groupDataArray[indexPath.section][indexPath.row]
+        }else{
+            aItem = dataArray[indexPath.row]
+        }
+        return aItem
     }
 }
