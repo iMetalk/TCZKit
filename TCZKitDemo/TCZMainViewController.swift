@@ -22,8 +22,9 @@ class TCZMainViewController: TCZBaseTableViewController {
     
     override func configureData() {
         super.configureData()
-        for title in titles {
-            let item: TCZTableViewItem = TCZTableViewItem(type: .LeftTitle, title: title, image: nil, bottomTitle: nil)
+        for atitle in titles {
+            var item = TCZTableViewItem(type: .LeftTitle)
+            item.title = atitle
             
             dataArray.append(item)
             cellIndentifierSet.insert(item.type.cellName)
@@ -33,7 +34,7 @@ class TCZMainViewController: TCZBaseTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let item: TCZTableViewItem = dataArray[indexPath.row]
+        let item: TCZTableViewItem = dataArray[indexPath.row] as! TCZTableViewItem
         navigationController?.pushViewController(NSObject.fromClassName(className: item.title!) as! UIViewController, animated: true)
         
     }

@@ -26,10 +26,13 @@ class TCZPlainViewController: TCZBaseTableViewController {
         for index in 1...10 {
             var item: TCZTableViewItem!
             if index % 2 == 0 {
-                item = TCZTableViewItem(type: .LeftTitle, title: "Hello, I am a title label cell", image: nil, bottomTitle: nil)
+                item = TCZTableViewItem(type: .LeftTitle)
+                item.title = "Hello world"
             }
             else{
-                item = TCZTableViewItem(type: .LeftImageTitle, title: "Hello, I am a image title cell", image: UIImage(named: "leftImage"), bottomTitle: nil)
+                item = TCZTableViewItem(type: .LeftImageTitle)
+                item.title = "Image title"
+                item.image = UIImage(named: "leftImage")
             }
             
             dataArray.append(item)

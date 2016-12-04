@@ -32,10 +32,10 @@ class TCZFirstViewController: TCZBaseTableViewController{
         for index in 1...10 {
             var item: TCZTableViewItem!
             if index % 2 == 0 {
-                item = TCZTableViewItem(type: .LeftTitle, title: "Hello, I am a title label cell", image: nil, bottomTitle: nil)
+//                item = TCZTableViewItem(bottomTitle: nil, image: nil, title: "Hello world", type: .LeftTitle)
             }
             else{
-                item = TCZTableViewItem(type: .LeftImageTitle, title: "Hello, I am a image title cell", image: UIImage(named: "leftImage"), bottomTitle: nil)
+//                item = TCZTableViewItem(bottomTitle: nil, image: nil, title: "Hello world", type: .LeftTitle)
             }
             
             dataArray.append(item)

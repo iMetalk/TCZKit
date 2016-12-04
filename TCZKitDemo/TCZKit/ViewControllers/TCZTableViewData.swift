@@ -36,18 +36,64 @@ enum TCZTableViewCellType {
 }
 
 
-/// TableView dataSource, you must use TCZTableViewItem as tableView dataSouce
-struct TCZTableViewItem {
-    // Cell type
-    let type: TCZTableViewCellType
-    // The left title
-    var title: String?
-    // The left image
-    var image: UIImage?
-    // The bottom title
-    var bottomTitle: String?
+/// If you want to use custom data model, you should implete TCZTableViewData
+protocol TCZTableViewData {
+    
+    /// The cell bottom title
+    var bottomTitle: String? { get }
+    
+    /// The cell image
+    var image: UIImage? { get }
+    
+    /// The cell title
+    var title: String? { get }
+    
+    /// The cell type
+    var type: TCZTableViewCellType { get }
+    
+    /// The cell height
+    var cellHeight: CGFloat { get }
 }
 
+extension TCZTableViewData {
+    
+    var cellHeight: CGFloat {
+        return TCZConstant.kRowHeight
+    }
+    
+    var bottomTitle: String? {
+        return nil
+    }
+    
+    var title: String? {
+        return nil
+    }
+    
+    var image: UIImage? {
+        return nil
+    }
+}
+
+
+/// TableView dataSource, you must use TCZTableViewItem as tableView dataSouce
+struct TCZTableViewItem: TCZTableViewData {
+    /// The cell bottom title
+    var bottomTitle: String?
+
+    /// The cell image
+    var image: UIImage?
+
+    /// The cell title
+    var title: String?
+
+    /// The cell type
+    var type: TCZTableViewCellType
+    
+    init(type: TCZTableViewCellType) {
+        self.type = type
+    }
+
+}
 
 
 /// TableView section view type

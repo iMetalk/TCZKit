@@ -36,8 +36,8 @@ class TCZBaseTableViewController: UIViewController {
     var isOpendDelete: Bool = false
     
     /// If tableView is plain, you must user dataArray, or you must use groupDataArray, as tableView dataSource
-    var dataArray = [TCZTableViewItem]()
-    var groupDataArray = [Array<TCZTableViewItem>]()
+    var dataArray = [TCZTableViewData]()
+    var groupDataArray = [Array<TCZTableViewData>]()
     
     /// You should set cellIndentifierSet when you configure tableView dataSource, this will use to register cell to tableView. You should use cell name as the cell indentifier
     var cellIndentifierSet: Set<String> = []
@@ -140,7 +140,7 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let aItem: TCZTableViewItem!
+        let aItem: TCZTableViewData!
         if isGroup {
             aItem = groupDataArray[indexPath.section][indexPath.row]
         }else{
@@ -225,7 +225,7 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     /// MARK: SubClass can implementation
-    func tczCellReuse(cell: TCZBaseCell, atIndexPath: IndexPath, item: TCZTableViewItem) {}
+    func tczCellReuse(cell: TCZBaseCell, atIndexPath: IndexPath, item: TCZTableViewData) {}
     
     func tczHeaderSectionView(sectionView: UIView) {}
     

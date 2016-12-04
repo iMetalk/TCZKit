@@ -21,7 +21,7 @@ class TCZBaseCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func tczConfigureData(aItem: TCZTableViewItem) {
+    func tczConfigureData(aItem: TCZTableViewData) {
         
     }
     

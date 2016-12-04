@@ -59,13 +59,12 @@ class TCZImageTitleCell: TCZBaseCell {
         }
     }
     
-    override func tczConfigureData(aItem: TCZTableViewItem) {
+    override func tczConfigureData(aItem: TCZTableViewData) {
+        titleLabel.text = aItem.title
         
-        if let aTitle = aItem.title {
-            titleLabel.text = aTitle
-        }
         if let aImage = aItem.image {
             leftImageView.image = aImage
         }
+
     }
 }

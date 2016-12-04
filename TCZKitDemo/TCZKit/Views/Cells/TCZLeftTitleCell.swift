@@ -37,10 +37,8 @@ class TCZLeftTitleCell: TCZBaseCell {
 
     }
     
-    override func tczConfigureData(aItem: TCZTableViewItem) {
-        if let title = aItem.title{
-            titleLabel.text = title
-        }
+    override func tczConfigureData(aItem: TCZTableViewData) {
+        titleLabel.text = aItem.title
     }
 
 }
