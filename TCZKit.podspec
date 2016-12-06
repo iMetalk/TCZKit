@@ -12,16 +12,14 @@ Pod::Spec.new do |s|
                     "tianxiangyang" => "iMetalk@163.com"
  }
   s.source       = { :git => "https://github.com/iMetalk/TCZKit", :commit => "3e9f341e1f22ef94d411c4c431cc011d0284e9df", :tag => s.version.to_s}
-  s.source_files  = "TCZKitDemo/*.{h,m}"
+  s.source_files  = "TCZKitDemo/TCZKit/**/*.{swift}"
   s.requires_arc  = true
 
   # s.private_header_files = "YTKNetwork/YTKNetworkPrivate.h"
 
   s.ios.deployment_target = "8.0"
-  # s.osx.deployment_target = "10.9"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-  # s.framework = "CFNetwork"
+  s.osx.deployment_target = "10.9"
+  s.watchos.deployment_target = "2.0"
+  s.tvos.deployment_target = "9.0"
 
-  s.dependency "AFNetworking", "~> 3.0"
 end
