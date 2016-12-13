@@ -29,11 +29,11 @@ class TCZLeftTitleCell: TCZBaseCell {
         
         // Title label
         contentView.addSubview(self.titleLabel)
-        titleLabel.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
-            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
-            make.top.bottom.equalToSuperview()
-        }
+//        titleLabel.snp.makeConstraints { (make) in
+//            make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
+//            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
+//            make.top.bottom.equalToSuperview()
+//        }
 
     }
     

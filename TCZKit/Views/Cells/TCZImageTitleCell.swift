@@ -20,10 +20,10 @@ class TCZImageTitleCell: TCZBaseCell {
     /// Change icon size
     var iconSize: CGSize = CGSize.zero {
         didSet {
-            leftImageView.snp.updateConstraints { (make) in
-                make.width.equalTo(iconSize.width)
-                make.height.equalTo(iconSize.height)
-            }
+//            leftImageView.snp.updateConstraints { (make) in
+//                make.width.equalTo(iconSize.width)
+//                make.height.equalTo(iconSize.height)
+//            }
         }
     }
 
@@ -45,18 +45,18 @@ class TCZImageTitleCell: TCZBaseCell {
         contentView.addSubview(leftImageView)
         contentView.addSubview(titleLabel)
         
-        leftImageView.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
-            make.width.equalTo(self.contentView.frame.height * 0.8)
-            make.height.equalTo(self.contentView.frame.height * 0.8)
-            make.centerY.equalToSuperview()
-        }
-        
-        titleLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(leftImageView.snp.right).offset(TCZConstant.kItemSpace)
-            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
-            make.centerY.equalToSuperview()
-        }
+//        leftImageView.snp.makeConstraints { (make) in
+//            make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
+//            make.width.equalTo(self.contentView.frame.height * 0.8)
+//            make.height.equalTo(self.contentView.frame.height * 0.8)
+//            make.centerY.equalToSuperview()
+//        }
+//        
+//        titleLabel.snp.makeConstraints { (make) in
+//            make.left.equalTo(leftImageView.snp.right).offset(TCZConstant.kItemSpace)
+//            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
+//            make.centerY.equalToSuperview()
+//        }
     }
     
     override func tczConfigureData(aItem: TCZTableViewData) {
