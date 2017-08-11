@@ -14,6 +14,7 @@
  */
 
 import UIKit
+import SnapKit
 
 class TCZLeftTitleCell: TCZBaseCell {
 
@@ -29,12 +30,12 @@ class TCZLeftTitleCell: TCZBaseCell {
         
         // Title label
         contentView.addSubview(self.titleLabel)
-//        titleLabel.snp.makeConstraints { (make) in
-//            make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
-//            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
-//            make.top.bottom.equalToSuperview()
-//        }
-
+        titleLabel.snp.makeConstraints { (make) in
+        make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
+            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
+            make.top.bottom.equalToSuperview()
+        }
+        
     }
     
     override func tczConfigureData(aItem: TCZTableViewData) {

@@ -89,7 +89,7 @@ class TCZBaseTableViewController: UIViewController {
         guard headerSectionHeight > 0 else {
             return
         }
-        tableView.register(NSClassFromString(headerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: headerSectionType.sectionViewName)
+    tableView.register(NSClassFromString(headerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: headerSectionType.sectionViewName)
         
         guard footerSectionHeight > 0 else {
             return
@@ -98,7 +98,7 @@ class TCZBaseTableViewController: UIViewController {
         guard headerSectionType != footerSectionType else {
             return
         }
-        tableView.register(NSClassFromString(footerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: footerSectionType.sectionViewName)
+    tableView.register(NSClassFromString(footerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: footerSectionType.sectionViewName)
     }
     
     // MARK - CreateUI
