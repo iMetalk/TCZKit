@@ -31,12 +31,12 @@ class TCZActionView: UIView {
         button.titleLabel?.font = UIFont.tczSystemFontWitSize(fontSize: 18)
         addSubview(button)
         
-//        button.snp.makeConstraints { (make) in
-//            make.centerY.equalTo(self)
-//            make.height.equalTo(kItemHeight)
-//            make.left.equalTo(TCZConstant.kLeftEdge)
-//            make.right.equalTo(-TCZConstant.kLeftEdge)
-//        }
+        button.snp.makeConstraints { (make) in
+            make.centerY.equalTo(self)
+            make.height.equalTo(kItemHeight)
+            make.left.equalTo(TCZConstant.kLeftEdge)
+            make.right.equalTo(-TCZConstant.kLeftEdge)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

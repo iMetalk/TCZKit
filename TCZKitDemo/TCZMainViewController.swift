@@ -11,7 +11,10 @@ import Foundation
 
 class TCZMainViewController: TCZBaseTableViewController {
 
-    let titles = ["TCZPlainViewController", "TCZGroupViewController"]
+    let titles = [
+        "TCZPlainViewController",
+        "TCZGroupViewController"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

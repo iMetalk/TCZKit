@@ -38,7 +38,6 @@ class TCZPlainViewController: TCZBaseTableViewController {
             dataArray.append(item)
             cellIndentifierSet.insert(item.type.cellName)
         }
-        
     }
     
     override func tczDidDelete(atIndexPath indexPath: IndexPath) {

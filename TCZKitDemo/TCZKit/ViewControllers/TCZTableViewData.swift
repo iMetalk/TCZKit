@@ -13,12 +13,13 @@ import UIKit
 /// TableView cell type
 enum TCZTableViewCellType {
     
-    // TCZLeftTitleCell
+    // TCZLeftTitleCell 左边一个标题
     case LeftTitle
-    // 
+    // 左边一个图片
     case LeftImage
-    // TCZImageTitleCell
+    // TCZImageTitleCell 左边一个图片，右边一个标题
     case LeftImageTitle
+    // 左边一个标题，底部一个标题
     case LeftAndBottomTitle
     
     var cellName: String {
