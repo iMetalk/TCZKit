@@ -39,8 +39,8 @@ enum TCZTableViewCellType {
     case TitleNextToImage
     //其他
     case Other
-    
 
+    
     var cellName: String {
         switch self {
         case .Title:

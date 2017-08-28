@@ -677,6 +677,7 @@
 				23996E0D1DE6CA7F009A001F /* Resources */,
 				B5EA6A31E4E3CA08C76EF976 /* [CP] Copy Pods Resources */,
 				790EDE0AD38741FDAF3EBAA8 /* 📦 Copy Pods Resources */,
+				4E0A605919136E52399C6881 /* [CP] Embed Pods Frameworks */,
 				A9DD24B6A77B6E5FCD2CFB26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -837,6 +838,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCZKitDemo/Pods-TCZKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E0A605919136E52399C6881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCZKitDemoUITests/Pods-TCZKitDemoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4EE8A539F76BA26D7A5B29B7 /* [CP] Check Pods Manifest.lock */ = {
