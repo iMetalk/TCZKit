@@ -8,13 +8,11 @@
 
 /*
  With a left image and a title, imageSize defalut is Cell heght * 0.8
- 
- ===== title | image =========
  */
 
 import UIKit
 
-class TCZImageTitleCell: TCZBaseCell {
+class TCZImageTitleCell: TCZBaseTableCell {
     
     
     /// Change icon size
@@ -46,25 +44,22 @@ class TCZImageTitleCell: TCZBaseCell {
         contentView.addSubview(titleLabel)
         
         leftImageView.snp.makeConstraints { (make) in
-        make.left.equalToSuperview().offset(TCZConstant.kLeftEdge)
+        make.left.equalToSuperview().offset(kLeftEdge)
             make.width.equalTo(self.contentView.frame.height * 0.8)
             make.height.equalTo(self.contentView.frame.height * 0.8)
             make.centerY.equalToSuperview()
         }
         
         titleLabel.snp.makeConstraints { (make) in
-        make.left.equalTo(leftImageView.snp.right).offset(TCZConstant.kItemSpace)
-            make.right.equalToSuperview().offset(-TCZConstant.kLeftEdge)
+        make.left.equalTo(leftImageView.snp.right).offset(kItemSpace)
+            make.right.equalToSuperview().offset(-kLeftEdge)
             make.centerY.equalToSuperview()
         }
     }
     
     override func tczConfigureData(aItem: TCZTableViewData) {
-        titleLabel.text = aItem.title
         
-        if let aImage = aItem.image {
-            leftImageView.image = aImage
-        }
-
+        titleLabel.text = aItem.title
+        leftImageView.image = aItem.image
     }
 }

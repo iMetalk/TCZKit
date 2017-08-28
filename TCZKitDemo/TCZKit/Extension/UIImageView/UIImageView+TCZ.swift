@@ -6,8 +6,8 @@
 //  Copyright © 2016年 WangSuyan. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
 
 extension UIImageView {
     
@@ -23,4 +23,5 @@ extension UIImageView {
     class func tczImageView() -> UIImageView {
         return tczImageView(image: nil)
     }
+    
 }

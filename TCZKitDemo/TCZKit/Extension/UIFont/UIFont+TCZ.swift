@@ -6,18 +6,27 @@
 //  Copyright © 2016年 WangSuyan. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import Foundation
 
 extension UIFont {
     
-    /// Create system font
-    ///
-    /// - Parameter fontSize: the font size
-    /// - Returns: UIFont
-    class func tczSystemFontWitSize(fontSize: CGFloat) -> UIFont {
-        let font = UIFont.systemFont(ofSize: fontSize)
-        return font
+    public class func tcz_systemFontWithSize(size: CGFloat) -> UIFont {
+        return UIFont.systemFont(ofSize: size + self.dom_fontScaleSize())
+    }
+    
+    public class func tcz_boldSystemFontWithSize(size: CGFloat) -> UIFont {
+        return UIFont.boldSystemFont(ofSize: size + self.dom_fontScaleSize())
+    }
+    
+    
+    private class func dom_fontScaleSize() -> CGFloat {
+        if WINDOW_HEIGHT <= 568 {
+            return -2
+        }else if WINDOW_HEIGHT == 736{
+            return 1
+        }
+        return 0
     }
     
 }

@@ -23,7 +23,7 @@ class TCZMainViewController: TCZBaseTableViewController {
     override func configureData() {
         super.configureData()
         for atitle in titles {
-            var item = TCZTableViewItem(type: .LeftTitle)
+            var item = TCZTableViewItem(type: .Title)
             item.title = atitle
             
             dataArray.append(item)

@@ -26,11 +26,11 @@ class TCZPlainViewController: TCZBaseTableViewController {
         for index in 1...10 {
             var item: TCZTableViewItem!
             if index % 2 == 0 {
-                item = TCZTableViewItem(type: .LeftTitle)
+                item = TCZTableViewItem(type: .Title)
                 item.title = "Hello world"
             }
             else{
-                item = TCZTableViewItem(type: .LeftImageTitle)
+                item = TCZTableViewItem(type: .ImageTitle)
                 item.title = "Image title"
                 item.image = UIImage(named: "leftImage")
             }

@@ -11,7 +11,6 @@
 		2339B5431DED7E730008461E /* TCZPlainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339B5421DED7E730008461E /* TCZPlainViewController.swift */; };
 		2339B5451DED7E7D0008461E /* TCZGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339B5441DED7E7D0008461E /* TCZGroupViewController.swift */; };
 		239162691DEA8440000A541C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 239162681DEA8440000A541C /* logo.png */; };
-		2391626C1DEAF49D000A541C /* TCZSectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */; };
 		23996DF41DE6CA7E009A001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF31DE6CA7E009A001F /* AppDelegate.swift */; };
 		23996DF61DE6CA7E009A001F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996DF51DE6CA7E009A001F /* ViewController.swift */; };
 		23996DF91DE6CA7E009A001F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23996DF71DE6CA7E009A001F /* Main.storyboard */; };
@@ -19,22 +18,51 @@
 		23996DFE1DE6CA7E009A001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23996DFC1DE6CA7E009A001F /* LaunchScreen.storyboard */; };
 		23996E091DE6CA7E009A001F /* TCZKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E081DE6CA7E009A001F /* TCZKitDemoTests.swift */; };
 		23996E141DE6CA7F009A001F /* TCZKitDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E131DE6CA7F009A001F /* TCZKitDemoUITests.swift */; };
-		23996E3D1DE6CCCB009A001F /* TCZUIConfiguation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E231DE6CCCB009A001F /* TCZUIConfiguation.swift */; };
-		23996E3E1DE6CCCB009A001F /* UIFont+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E281DE6CCCB009A001F /* UIFont+TCZ.swift */; };
-		23996E3F1DE6CCCB009A001F /* UIImageView+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E2A1DE6CCCB009A001F /* UIImageView+TCZ.swift */; };
-		23996E401DE6CCCB009A001F /* UILabel+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E2C1DE6CCCB009A001F /* UILabel+TCZ.swift */; };
-		23996E411DE6CCCB009A001F /* UITableView+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E2E1DE6CCCB009A001F /* UITableView+TCZ.swift */; };
-		23996E421DE6CCCB009A001F /* TCZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E331DE6CCCB009A001F /* TCZStackView.swift */; };
-		23996E431DE6CCCB009A001F /* TCZBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E351DE6CCCB009A001F /* TCZBaseTableViewController.swift */; };
-		23996E441DE6CCCB009A001F /* TCZTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E361DE6CCCB009A001F /* TCZTableViewData.swift */; };
-		23996E451DE6CCCB009A001F /* TCZTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E371DE6CCCB009A001F /* TCZTableViewDelegate.swift */; };
-		23996E461DE6CCCB009A001F /* TCZBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E3A1DE6CCCB009A001F /* TCZBaseCell.swift */; };
-		23996E471DE6CCCB009A001F /* TCZImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E3B1DE6CCCB009A001F /* TCZImageTitleCell.swift */; };
-		23996E481DE6CCCB009A001F /* TCZLeftTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E3C1DE6CCCB009A001F /* TCZLeftTitleCell.swift */; };
 		23996E4A1DE6CCF8009A001F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 23996E491DE6CCF8009A001F /* README.md */; };
 		23996E4C1DE6CD5A009A001F /* TCZFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23996E4B1DE6CD5A009A001F /* TCZFirstViewController.swift */; };
-		23D70EDD1DE81C0E00A7E147 /* TCZActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D70EDC1DE81C0E00A7E147 /* TCZActionView.swift */; };
-		23D70EDF1DE81E5100A7E147 /* UIButton+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D70EDE1DE81E5100A7E147 /* UIButton+TCZ.swift */; };
+		3BFD9EFA1F53CFFD00B83FAA /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD9EAB1F53CFFD00B83FAA /* arrow.png */; };
+		3BFD9EFB1F53CFFD00B83FAA /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BFD9EAC1F53CFFD00B83FAA /* line.png */; };
+		3BFD9EFC1F53CFFD00B83FAA /* TCZConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EAD1F53CFFD00B83FAA /* TCZConstant.swift */; };
+		3BFD9EFD1F53CFFD00B83FAA /* Array+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EB01F53CFFD00B83FAA /* Array+TCZ.swift */; };
+		3BFD9EFE1F53CFFD00B83FAA /* Date+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EB21F53CFFD00B83FAA /* Date+TCZ.swift */; };
+		3BFD9EFF1F53CFFD00B83FAA /* Dictionary+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EB41F53CFFD00B83FAA /* Dictionary+TCZ.swift */; };
+		3BFD9F001F53CFFD00B83FAA /* String+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EB61F53CFFD00B83FAA /* String+TCZ.swift */; };
+		3BFD9F011F53CFFD00B83FAA /* UIButton+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EB81F53CFFD00B83FAA /* UIButton+TCZ.swift */; };
+		3BFD9F021F53CFFD00B83FAA /* UIColor+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EBA1F53CFFD00B83FAA /* UIColor+TCZ.swift */; };
+		3BFD9F031F53CFFD00B83FAA /* UIDevice+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EBC1F53CFFD00B83FAA /* UIDevice+TCZ.swift */; };
+		3BFD9F041F53CFFD00B83FAA /* UIFont+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EBE1F53CFFD00B83FAA /* UIFont+TCZ.swift */; };
+		3BFD9F051F53CFFD00B83FAA /* UIImageView+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EC01F53CFFD00B83FAA /* UIImageView+TCZ.swift */; };
+		3BFD9F061F53CFFD00B83FAA /* UILabel+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EC21F53CFFD00B83FAA /* UILabel+TCZ.swift */; };
+		3BFD9F071F53CFFD00B83FAA /* UITableView+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EC41F53CFFD00B83FAA /* UITableView+TCZ.swift */; };
+		3BFD9F081F53CFFD00B83FAA /* UIView+TCZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EC61F53CFFD00B83FAA /* UIView+TCZ.swift */; };
+		3BFD9F091F53CFFD00B83FAA /* TCZCancelableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EC81F53CFFD00B83FAA /* TCZCancelableTask.swift */; };
+		3BFD9F0A1F53CFFD00B83FAA /* TCZActionSheetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ECB1F53CFFD00B83FAA /* TCZActionSheetHelper.swift */; };
+		3BFD9F0B1F53CFFD00B83FAA /* TCZAlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ECD1F53CFFD00B83FAA /* TCZAlertViewHelper.swift */; };
+		3BFD9F0C1F53CFFD00B83FAA /* TCZActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ECF1F53CFFD00B83FAA /* TCZActionButton.swift */; };
+		3BFD9F0D1F53CFFD00B83FAA /* TCZBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED11F53CFFD00B83FAA /* TCZBaseNavigationController.swift */; };
+		3BFD9F0E1F53CFFD00B83FAA /* TCZBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED21F53CFFD00B83FAA /* TCZBaseTableViewController.swift */; };
+		3BFD9F0F1F53CFFD00B83FAA /* TCZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED31F53CFFD00B83FAA /* TCZBaseViewController.swift */; };
+		3BFD9F101F53CFFD00B83FAA /* TCZBaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED41F53CFFD00B83FAA /* TCZBaseWebViewController.swift */; };
+		3BFD9F111F53CFFD00B83FAA /* TCZKitInputTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED51F53CFFD00B83FAA /* TCZKitInputTextFieldController.swift */; };
+		3BFD9F121F53CFFD00B83FAA /* TCZKitInputTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED61F53CFFD00B83FAA /* TCZKitInputTextViewController.swift */; };
+		3BFD9F131F53CFFD00B83FAA /* TCZTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED71F53CFFD00B83FAA /* TCZTableViewData.swift */; };
+		3BFD9F141F53CFFD00B83FAA /* TCZTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9ED81F53CFFD00B83FAA /* TCZTableViewDelegate.swift */; };
+		3BFD9F151F53CFFD00B83FAA /* TCZBaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EDB1F53CFFD00B83FAA /* TCZBaseTableCell.swift */; };
+		3BFD9F161F53CFFD00B83FAA /* TCZImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EDD1F53CFFD00B83FAA /* TCZImageTitleCell.swift */; };
+		3BFD9F171F53CFFD00B83FAA /* TCZImageTitleBottomSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EDF1F53CFFD00B83FAA /* TCZImageTitleBottomSubtitleCell.swift */; };
+		3BFD9F181F53CFFD00B83FAA /* TCZImageTitleRightSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EE11F53CFFD00B83FAA /* TCZImageTitleRightSubtitleCell.swift */; };
+		3BFD9F191F53CFFD00B83FAA /* TCZTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EE31F53CFFD00B83FAA /* TCZTitleCell.swift */; };
+		3BFD9F1A1F53CFFD00B83FAA /* TCZTitleBottomSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EE51F53CFFD00B83FAA /* TCZTitleBottomSubtitleCell.swift */; };
+		3BFD9F1B1F53CFFD00B83FAA /* TCZTitleRightSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EE71F53CFFD00B83FAA /* TCZTitleRightSubtitleCell.swift */; };
+		3BFD9F1C1F53CFFD00B83FAA /* TCZTitleImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EE91F53CFFD00B83FAA /* TCZTitleImageCell.swift */; };
+		3BFD9F1D1F53CFFD00B83FAA /* TCZTitleSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EEB1F53CFFD00B83FAA /* TCZTitleSwitchCell.swift */; };
+		3BFD9F1E1F53CFFD00B83FAA /* TCZTitleNextToImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EED1F53CFFD00B83FAA /* TCZTitleNextToImageCell.swift */; };
+		3BFD9F1F1F53CFFD00B83FAA /* TCZTitleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EEF1F53CFFD00B83FAA /* TCZTitleTextFieldCell.swift */; };
+		3BFD9F201F53CFFD00B83FAA /* TCZTitleTextFieldImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EF11F53CFFD00B83FAA /* TCZTitleTextFieldImageCell.swift */; };
+		3BFD9F211F53CFFD00B83FAA /* TCZTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EF31F53CFFD00B83FAA /* TCZTextFieldCell.swift */; };
+		3BFD9F221F53CFFD00B83FAA /* TCZSectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EF51F53CFFD00B83FAA /* TCZSectionTitleView.swift */; };
+		3BFD9F231F53CFFD00B83FAA /* TCZStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EF71F53CFFD00B83FAA /* TCZStackView.swift */; };
+		3BFD9F241F53CFFD00B83FAA /* TCZActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFD9EF91F53CFFD00B83FAA /* TCZActionView.swift */; };
 		7094B403A65093572C567DFE /* Pods_TCZKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C53290616CB76605B762381 /* Pods_TCZKitDemo.framework */; };
 		75DE6D301E5E7BA1F49E418F /* Pods_TCZKitDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46FE6F38301C2BC112ADA68 /* Pods_TCZKitDemoUITests.framework */; };
 		95E8FBA72A384FFB1ED2D690 /* Pods_TCZKitDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E7FEE2AA6DFAB725F4253A /* Pods_TCZKitDemoTests.framework */; };
@@ -64,7 +92,6 @@
 		2339B5421DED7E730008461E /* TCZPlainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZPlainViewController.swift; sourceTree = "<group>"; };
 		2339B5441DED7E7D0008461E /* TCZGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZGroupViewController.swift; sourceTree = "<group>"; };
 		239162681DEA8440000A541C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZSectionTitleView.swift; sourceTree = "<group>"; };
 		23996DF01DE6CA7E009A001F /* TCZKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCZKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23996DF31DE6CA7E009A001F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23996DF51DE6CA7E009A001F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,23 +105,52 @@
 		23996E0F1DE6CA7F009A001F /* TCZKitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCZKitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23996E131DE6CA7F009A001F /* TCZKitDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCZKitDemoUITests.swift; sourceTree = "<group>"; };
 		23996E151DE6CA7F009A001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23996E231DE6CCCB009A001F /* TCZUIConfiguation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZUIConfiguation.swift; sourceTree = "<group>"; };
-		23996E281DE6CCCB009A001F /* UIFont+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+TCZ.swift"; sourceTree = "<group>"; };
-		23996E2A1DE6CCCB009A001F /* UIImageView+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+TCZ.swift"; sourceTree = "<group>"; };
-		23996E2C1DE6CCCB009A001F /* UILabel+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+TCZ.swift"; sourceTree = "<group>"; };
-		23996E2E1DE6CCCB009A001F /* UITableView+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+TCZ.swift"; sourceTree = "<group>"; };
-		23996E331DE6CCCB009A001F /* TCZStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZStackView.swift; sourceTree = "<group>"; };
-		23996E351DE6CCCB009A001F /* TCZBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseTableViewController.swift; sourceTree = "<group>"; };
-		23996E361DE6CCCB009A001F /* TCZTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewData.swift; sourceTree = "<group>"; };
-		23996E371DE6CCCB009A001F /* TCZTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewDelegate.swift; sourceTree = "<group>"; };
-		23996E3A1DE6CCCB009A001F /* TCZBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseCell.swift; sourceTree = "<group>"; };
-		23996E3B1DE6CCCB009A001F /* TCZImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZImageTitleCell.swift; sourceTree = "<group>"; };
-		23996E3C1DE6CCCB009A001F /* TCZLeftTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZLeftTitleCell.swift; sourceTree = "<group>"; };
 		23996E491DE6CCF8009A001F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		23996E4B1DE6CD5A009A001F /* TCZFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZFirstViewController.swift; sourceTree = "<group>"; };
-		23D70EDC1DE81C0E00A7E147 /* TCZActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZActionView.swift; sourceTree = "<group>"; };
-		23D70EDE1DE81E5100A7E147 /* UIButton+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+TCZ.swift"; sourceTree = "<group>"; };
 		256EEF3030C43BC7107FDEDD /* Pods-TCZKitDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemoUITests/Pods-TCZKitDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BFD9EAB1F53CFFD00B83FAA /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		3BFD9EAC1F53CFFD00B83FAA /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		3BFD9EAD1F53CFFD00B83FAA /* TCZConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZConstant.swift; sourceTree = "<group>"; };
+		3BFD9EB01F53CFFD00B83FAA /* Array+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EB21F53CFFD00B83FAA /* Date+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EB41F53CFFD00B83FAA /* Dictionary+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EB61F53CFFD00B83FAA /* String+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EB81F53CFFD00B83FAA /* UIButton+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EBA1F53CFFD00B83FAA /* UIColor+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EBC1F53CFFD00B83FAA /* UIDevice+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EBE1F53CFFD00B83FAA /* UIFont+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EC01F53CFFD00B83FAA /* UIImageView+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EC21F53CFFD00B83FAA /* UILabel+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EC41F53CFFD00B83FAA /* UITableView+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EC61F53CFFD00B83FAA /* UIView+TCZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TCZ.swift"; sourceTree = "<group>"; };
+		3BFD9EC81F53CFFD00B83FAA /* TCZCancelableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZCancelableTask.swift; sourceTree = "<group>"; };
+		3BFD9ECB1F53CFFD00B83FAA /* TCZActionSheetHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZActionSheetHelper.swift; sourceTree = "<group>"; };
+		3BFD9ECD1F53CFFD00B83FAA /* TCZAlertViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZAlertViewHelper.swift; sourceTree = "<group>"; };
+		3BFD9ECF1F53CFFD00B83FAA /* TCZActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZActionButton.swift; sourceTree = "<group>"; };
+		3BFD9ED11F53CFFD00B83FAA /* TCZBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseNavigationController.swift; sourceTree = "<group>"; };
+		3BFD9ED21F53CFFD00B83FAA /* TCZBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseTableViewController.swift; sourceTree = "<group>"; };
+		3BFD9ED31F53CFFD00B83FAA /* TCZBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseViewController.swift; sourceTree = "<group>"; };
+		3BFD9ED41F53CFFD00B83FAA /* TCZBaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseWebViewController.swift; sourceTree = "<group>"; };
+		3BFD9ED51F53CFFD00B83FAA /* TCZKitInputTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZKitInputTextFieldController.swift; sourceTree = "<group>"; };
+		3BFD9ED61F53CFFD00B83FAA /* TCZKitInputTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZKitInputTextViewController.swift; sourceTree = "<group>"; };
+		3BFD9ED71F53CFFD00B83FAA /* TCZTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewData.swift; sourceTree = "<group>"; };
+		3BFD9ED81F53CFFD00B83FAA /* TCZTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTableViewDelegate.swift; sourceTree = "<group>"; };
+		3BFD9EDB1F53CFFD00B83FAA /* TCZBaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZBaseTableCell.swift; sourceTree = "<group>"; };
+		3BFD9EDD1F53CFFD00B83FAA /* TCZImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZImageTitleCell.swift; sourceTree = "<group>"; };
+		3BFD9EDF1F53CFFD00B83FAA /* TCZImageTitleBottomSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZImageTitleBottomSubtitleCell.swift; sourceTree = "<group>"; };
+		3BFD9EE11F53CFFD00B83FAA /* TCZImageTitleRightSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZImageTitleRightSubtitleCell.swift; sourceTree = "<group>"; };
+		3BFD9EE31F53CFFD00B83FAA /* TCZTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleCell.swift; sourceTree = "<group>"; };
+		3BFD9EE51F53CFFD00B83FAA /* TCZTitleBottomSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleBottomSubtitleCell.swift; sourceTree = "<group>"; };
+		3BFD9EE71F53CFFD00B83FAA /* TCZTitleRightSubtitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleRightSubtitleCell.swift; sourceTree = "<group>"; };
+		3BFD9EE91F53CFFD00B83FAA /* TCZTitleImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleImageCell.swift; sourceTree = "<group>"; };
+		3BFD9EEB1F53CFFD00B83FAA /* TCZTitleSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleSwitchCell.swift; sourceTree = "<group>"; };
+		3BFD9EED1F53CFFD00B83FAA /* TCZTitleNextToImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleNextToImageCell.swift; sourceTree = "<group>"; };
+		3BFD9EEF1F53CFFD00B83FAA /* TCZTitleTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleTextFieldCell.swift; sourceTree = "<group>"; };
+		3BFD9EF11F53CFFD00B83FAA /* TCZTitleTextFieldImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTitleTextFieldImageCell.swift; sourceTree = "<group>"; };
+		3BFD9EF31F53CFFD00B83FAA /* TCZTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZTextFieldCell.swift; sourceTree = "<group>"; };
+		3BFD9EF51F53CFFD00B83FAA /* TCZSectionTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZSectionTitleView.swift; sourceTree = "<group>"; };
+		3BFD9EF71F53CFFD00B83FAA /* TCZStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZStackView.swift; sourceTree = "<group>"; };
+		3BFD9EF91F53CFFD00B83FAA /* TCZActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCZActionView.swift; sourceTree = "<group>"; };
 		5567BABE6745D95CB1F40D72 /* Pods-TCZKitDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemoUITests/Pods-TCZKitDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		634EF2DB1893E3699160E72F /* Pods-TCZKitDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemoTests/Pods-TCZKitDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AAA3D4C6BE43986C5D6E6E7 /* Pods-TCZKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCZKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCZKitDemo/Pods-TCZKitDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,14 +187,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2391626A1DEAF46D000A541C /* HeaderFooterView */ = {
-			isa = PBXGroup;
-			children = (
-				2391626B1DEAF49D000A541C /* TCZSectionTitleView.swift */,
-			);
-			path = HeaderFooterView;
-			sourceTree = "<group>";
-		};
 		23996DE71DE6CA7E009A001F = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +214,7 @@
 		23996DF21DE6CA7E009A001F /* TCZKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				23996E211DE6CCCB009A001F /* TCZKit */,
+				3BFD9EA91F53CFFD00B83FAA /* TCZKit */,
 				23996DF31DE6CA7E009A001F /* AppDelegate.swift */,
 				23996DF51DE6CA7E009A001F /* ViewController.swift */,
 				23996DF71DE6CA7E009A001F /* Main.storyboard */,
@@ -199,152 +247,348 @@
 			path = TCZKitDemoUITests;
 			sourceTree = "<group>";
 		};
-		23996E211DE6CCCB009A001F /* TCZKit */ = {
+		3BFD9EA91F53CFFD00B83FAA /* TCZKit */ = {
 			isa = PBXGroup;
 			children = (
-				23996E221DE6CCCB009A001F /* Configuration */,
-				23996E241DE6CCCB009A001F /* Extension */,
-				23996E311DE6CCCB009A001F /* Utils */,
-				23996E341DE6CCCB009A001F /* ViewControllers */,
-				23996E381DE6CCCB009A001F /* Views */,
+				3BFD9EAA1F53CFFD00B83FAA /* Configuration */,
+				3BFD9EAE1F53CFFD00B83FAA /* Extension */,
+				3BFD9EC71F53CFFD00B83FAA /* Helper */,
+				3BFD9EC91F53CFFD00B83FAA /* Utils */,
+				3BFD9ED01F53CFFD00B83FAA /* ViewControllers */,
+				3BFD9ED91F53CFFD00B83FAA /* Views */,
 			);
 			path = TCZKit;
 			sourceTree = "<group>";
 		};
-		23996E221DE6CCCB009A001F /* Configuration */ = {
+		3BFD9EAA1F53CFFD00B83FAA /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				23996E231DE6CCCB009A001F /* TCZUIConfiguation.swift */,
+				3BFD9EAB1F53CFFD00B83FAA /* arrow.png */,
+				3BFD9EAC1F53CFFD00B83FAA /* line.png */,
+				3BFD9EAD1F53CFFD00B83FAA /* TCZConstant.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		23996E241DE6CCCB009A001F /* Extension */ = {
+		3BFD9EAE1F53CFFD00B83FAA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				23996E251DE6CCCB009A001F /* UIButton */,
-				23996E261DE6CCCB009A001F /* UICollectionView */,
-				23996E271DE6CCCB009A001F /* UIFont */,
-				23996E291DE6CCCB009A001F /* UIImageView */,
-				23996E2B1DE6CCCB009A001F /* UILabel */,
-				23996E2D1DE6CCCB009A001F /* UITableView */,
-				23996E2F1DE6CCCB009A001F /* UITextField */,
-				23996E301DE6CCCB009A001F /* UITextView */,
+				3BFD9EAF1F53CFFD00B83FAA /* Array */,
+				3BFD9EB11F53CFFD00B83FAA /* Date */,
+				3BFD9EB31F53CFFD00B83FAA /* Dictionary */,
+				3BFD9EB51F53CFFD00B83FAA /* String */,
+				3BFD9EB71F53CFFD00B83FAA /* UIButton */,
+				3BFD9EB91F53CFFD00B83FAA /* UIColor */,
+				3BFD9EBB1F53CFFD00B83FAA /* UIDevice */,
+				3BFD9EBD1F53CFFD00B83FAA /* UIFont */,
+				3BFD9EBF1F53CFFD00B83FAA /* UIImageView */,
+				3BFD9EC11F53CFFD00B83FAA /* UILabel */,
+				3BFD9EC31F53CFFD00B83FAA /* UITableView */,
+				3BFD9EC51F53CFFD00B83FAA /* UIView */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		23996E251DE6CCCB009A001F /* UIButton */ = {
+		3BFD9EAF1F53CFFD00B83FAA /* Array */ = {
 			isa = PBXGroup;
 			children = (
-				23D70EDE1DE81E5100A7E147 /* UIButton+TCZ.swift */,
+				3BFD9EB01F53CFFD00B83FAA /* Array+TCZ.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		3BFD9EB11F53CFFD00B83FAA /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EB21F53CFFD00B83FAA /* Date+TCZ.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		3BFD9EB31F53CFFD00B83FAA /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EB41F53CFFD00B83FAA /* Dictionary+TCZ.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		3BFD9EB51F53CFFD00B83FAA /* String */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EB61F53CFFD00B83FAA /* String+TCZ.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		3BFD9EB71F53CFFD00B83FAA /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EB81F53CFFD00B83FAA /* UIButton+TCZ.swift */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
 		};
-		23996E261DE6CCCB009A001F /* UICollectionView */ = {
+		3BFD9EB91F53CFFD00B83FAA /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
+				3BFD9EBA1F53CFFD00B83FAA /* UIColor+TCZ.swift */,
 			);
-			path = UICollectionView;
+			path = UIColor;
 			sourceTree = "<group>";
 		};
-		23996E271DE6CCCB009A001F /* UIFont */ = {
+		3BFD9EBB1F53CFFD00B83FAA /* UIDevice */ = {
 			isa = PBXGroup;
 			children = (
-				23996E281DE6CCCB009A001F /* UIFont+TCZ.swift */,
+				3BFD9EBC1F53CFFD00B83FAA /* UIDevice+TCZ.swift */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		3BFD9EBD1F53CFFD00B83FAA /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EBE1F53CFFD00B83FAA /* UIFont+TCZ.swift */,
 			);
 			path = UIFont;
 			sourceTree = "<group>";
 		};
-		23996E291DE6CCCB009A001F /* UIImageView */ = {
+		3BFD9EBF1F53CFFD00B83FAA /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
-				23996E2A1DE6CCCB009A001F /* UIImageView+TCZ.swift */,
+				3BFD9EC01F53CFFD00B83FAA /* UIImageView+TCZ.swift */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
 		};
-		23996E2B1DE6CCCB009A001F /* UILabel */ = {
+		3BFD9EC11F53CFFD00B83FAA /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				23996E2C1DE6CCCB009A001F /* UILabel+TCZ.swift */,
+				3BFD9EC21F53CFFD00B83FAA /* UILabel+TCZ.swift */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
 		};
-		23996E2D1DE6CCCB009A001F /* UITableView */ = {
+		3BFD9EC31F53CFFD00B83FAA /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				23996E2E1DE6CCCB009A001F /* UITableView+TCZ.swift */,
+				3BFD9EC41F53CFFD00B83FAA /* UITableView+TCZ.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
 		};
-		23996E2F1DE6CCCB009A001F /* UITextField */ = {
+		3BFD9EC51F53CFFD00B83FAA /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				3BFD9EC61F53CFFD00B83FAA /* UIView+TCZ.swift */,
 			);
-			path = UITextField;
+			path = UIView;
 			sourceTree = "<group>";
 		};
-		23996E301DE6CCCB009A001F /* UITextView */ = {
+		3BFD9EC71F53CFFD00B83FAA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				3BFD9EC81F53CFFD00B83FAA /* TCZCancelableTask.swift */,
 			);
-			path = UITextView;
+			path = Helper;
 			sourceTree = "<group>";
 		};
-		23996E311DE6CCCB009A001F /* Utils */ = {
+		3BFD9EC91F53CFFD00B83FAA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				23D70EDB1DE81BE900A7E147 /* TCZActionView */,
-				23996E321DE6CCCB009A001F /* TCZStackView */,
+				3BFD9ECA1F53CFFD00B83FAA /* ActionSheetHelper */,
+				3BFD9ECC1F53CFFD00B83FAA /* AlertViewHelper */,
+				3BFD9ECE1F53CFFD00B83FAA /* TCZActionButton */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		23996E321DE6CCCB009A001F /* TCZStackView */ = {
+		3BFD9ECA1F53CFFD00B83FAA /* ActionSheetHelper */ = {
 			isa = PBXGroup;
 			children = (
-				23996E331DE6CCCB009A001F /* TCZStackView.swift */,
+				3BFD9ECB1F53CFFD00B83FAA /* TCZActionSheetHelper.swift */,
 			);
-			path = TCZStackView;
+			path = ActionSheetHelper;
 			sourceTree = "<group>";
 		};
-		23996E341DE6CCCB009A001F /* ViewControllers */ = {
+		3BFD9ECC1F53CFFD00B83FAA /* AlertViewHelper */ = {
 			isa = PBXGroup;
 			children = (
-				23996E351DE6CCCB009A001F /* TCZBaseTableViewController.swift */,
-				23996E361DE6CCCB009A001F /* TCZTableViewData.swift */,
-				23996E371DE6CCCB009A001F /* TCZTableViewDelegate.swift */,
+				3BFD9ECD1F53CFFD00B83FAA /* TCZAlertViewHelper.swift */,
+			);
+			path = AlertViewHelper;
+			sourceTree = "<group>";
+		};
+		3BFD9ECE1F53CFFD00B83FAA /* TCZActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9ECF1F53CFFD00B83FAA /* TCZActionButton.swift */,
+			);
+			path = TCZActionButton;
+			sourceTree = "<group>";
+		};
+		3BFD9ED01F53CFFD00B83FAA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9ED11F53CFFD00B83FAA /* TCZBaseNavigationController.swift */,
+				3BFD9ED21F53CFFD00B83FAA /* TCZBaseTableViewController.swift */,
+				3BFD9ED31F53CFFD00B83FAA /* TCZBaseViewController.swift */,
+				3BFD9ED41F53CFFD00B83FAA /* TCZBaseWebViewController.swift */,
+				3BFD9ED51F53CFFD00B83FAA /* TCZKitInputTextFieldController.swift */,
+				3BFD9ED61F53CFFD00B83FAA /* TCZKitInputTextViewController.swift */,
+				3BFD9ED71F53CFFD00B83FAA /* TCZTableViewData.swift */,
+				3BFD9ED81F53CFFD00B83FAA /* TCZTableViewDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		23996E381DE6CCCB009A001F /* Views */ = {
+		3BFD9ED91F53CFFD00B83FAA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2391626A1DEAF46D000A541C /* HeaderFooterView */,
-				23996E391DE6CCCB009A001F /* Cells */,
+				3BFD9EDA1F53CFFD00B83FAA /* Cells */,
+				3BFD9EF41F53CFFD00B83FAA /* HeaderFooterView */,
+				3BFD9EF61F53CFFD00B83FAA /* StackView */,
+				3BFD9EF81F53CFFD00B83FAA /* TCZActionView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		23996E391DE6CCCB009A001F /* Cells */ = {
+		3BFD9EDA1F53CFFD00B83FAA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				23996E3A1DE6CCCB009A001F /* TCZBaseCell.swift */,
-				23996E3B1DE6CCCB009A001F /* TCZImageTitleCell.swift */,
-				23996E3C1DE6CCCB009A001F /* TCZLeftTitleCell.swift */,
+				3BFD9EDB1F53CFFD00B83FAA /* TCZBaseTableCell.swift */,
+				3BFD9EDC1F53CFFD00B83FAA /* 图标+标题 TCZImageTitleCell */,
+				3BFD9EDE1F53CFFD00B83FAA /* 图标+标题+下子标题 TCZImageTitleBottomSubtitleCell */,
+				3BFD9EE01F53CFFD00B83FAA /* 图标+标题+右子标题 TCZImageTitleRightSubtitleCell */,
+				3BFD9EE21F53CFFD00B83FAA /* 标题 TCZTitleCell */,
+				3BFD9EE41F53CFFD00B83FAA /* 标题+下子标题 TCZTitleBottomSubtitleCell */,
+				3BFD9EE61F53CFFD00B83FAA /* 标题+右子标题 TCZTitleRightSubtitleCell */,
+				3BFD9EE81F53CFFD00B83FAA /* 标题+图片 TCZTitleImageCell */,
+				3BFD9EEA1F53CFFD00B83FAA /* 标题+开关 TCZTitleSwitchCell */,
+				3BFD9EEC1F53CFFD00B83FAA /* 标题+紧挨标题的图标 TCZTitleNextToImageCell */,
+				3BFD9EEE1F53CFFD00B83FAA /* 标题+输入框 TCZTitleTextFieldCell */,
+				3BFD9EF01F53CFFD00B83FAA /* 标题+输入框+图标 TCZTitleTextFieldImageCell */,
+				3BFD9EF21F53CFFD00B83FAA /* 输入框 TCZTextFieldCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		23D70EDB1DE81BE900A7E147 /* TCZActionView */ = {
+		3BFD9EDC1F53CFFD00B83FAA /* 图标+标题 TCZImageTitleCell */ = {
 			isa = PBXGroup;
 			children = (
-				23D70EDC1DE81C0E00A7E147 /* TCZActionView.swift */,
+				3BFD9EDD1F53CFFD00B83FAA /* TCZImageTitleCell.swift */,
+			);
+			path = "图标+标题 TCZImageTitleCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EDE1F53CFFD00B83FAA /* 图标+标题+下子标题 TCZImageTitleBottomSubtitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EDF1F53CFFD00B83FAA /* TCZImageTitleBottomSubtitleCell.swift */,
+			);
+			path = "图标+标题+下子标题 TCZImageTitleBottomSubtitleCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EE01F53CFFD00B83FAA /* 图标+标题+右子标题 TCZImageTitleRightSubtitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EE11F53CFFD00B83FAA /* TCZImageTitleRightSubtitleCell.swift */,
+			);
+			path = "图标+标题+右子标题 TCZImageTitleRightSubtitleCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EE21F53CFFD00B83FAA /* 标题 TCZTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EE31F53CFFD00B83FAA /* TCZTitleCell.swift */,
+			);
+			path = "标题 TCZTitleCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EE41F53CFFD00B83FAA /* 标题+下子标题 TCZTitleBottomSubtitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EE51F53CFFD00B83FAA /* TCZTitleBottomSubtitleCell.swift */,
+			);
+			path = "标题+下子标题 TCZTitleBottomSubtitleCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EE61F53CFFD00B83FAA /* 标题+右子标题 TCZTitleRightSubtitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EE71F53CFFD00B83FAA /* TCZTitleRightSubtitleCell.swift */,
+			);
+			path = "标题+右子标题 TCZTitleRightSubtitleCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EE81F53CFFD00B83FAA /* 标题+图片 TCZTitleImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EE91F53CFFD00B83FAA /* TCZTitleImageCell.swift */,
+			);
+			path = "标题+图片 TCZTitleImageCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EEA1F53CFFD00B83FAA /* 标题+开关 TCZTitleSwitchCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EEB1F53CFFD00B83FAA /* TCZTitleSwitchCell.swift */,
+			);
+			path = "标题+开关 TCZTitleSwitchCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EEC1F53CFFD00B83FAA /* 标题+紧挨标题的图标 TCZTitleNextToImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EED1F53CFFD00B83FAA /* TCZTitleNextToImageCell.swift */,
+			);
+			path = "标题+紧挨标题的图标 TCZTitleNextToImageCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EEE1F53CFFD00B83FAA /* 标题+输入框 TCZTitleTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EEF1F53CFFD00B83FAA /* TCZTitleTextFieldCell.swift */,
+			);
+			path = "标题+输入框 TCZTitleTextFieldCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EF01F53CFFD00B83FAA /* 标题+输入框+图标 TCZTitleTextFieldImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EF11F53CFFD00B83FAA /* TCZTitleTextFieldImageCell.swift */,
+			);
+			path = "标题+输入框+图标 TCZTitleTextFieldImageCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EF21F53CFFD00B83FAA /* 输入框 TCZTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EF31F53CFFD00B83FAA /* TCZTextFieldCell.swift */,
+			);
+			path = "输入框 TCZTextFieldCell";
+			sourceTree = "<group>";
+		};
+		3BFD9EF41F53CFFD00B83FAA /* HeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EF51F53CFFD00B83FAA /* TCZSectionTitleView.swift */,
+			);
+			path = HeaderFooterView;
+			sourceTree = "<group>";
+		};
+		3BFD9EF61F53CFFD00B83FAA /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EF71F53CFFD00B83FAA /* TCZStackView.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		3BFD9EF81F53CFFD00B83FAA /* TCZActionView */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD9EF91F53CFFD00B83FAA /* TCZActionView.swift */,
 			);
 			path = TCZActionView;
 			sourceTree = "<group>";
@@ -502,7 +746,9 @@
 				239162691DEA8440000A541C /* logo.png in Resources */,
 				23996DFE1DE6CA7E009A001F /* LaunchScreen.storyboard in Resources */,
 				23996DFB1DE6CA7E009A001F /* Assets.xcassets in Resources */,
+				3BFD9EFA1F53CFFD00B83FAA /* arrow.png in Resources */,
 				23996DF91DE6CA7E009A001F /* Main.storyboard in Resources */,
+				3BFD9EFB1F53CFFD00B83FAA /* line.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,10 +824,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TCZKitDemo/Pods-TCZKitDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,28 +1047,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFD9F1E1F53CFFD00B83FAA /* TCZTitleNextToImageCell.swift in Sources */,
+				3BFD9EFF1F53CFFD00B83FAA /* Dictionary+TCZ.swift in Sources */,
 				2339B5451DED7E7D0008461E /* TCZGroupViewController.swift in Sources */,
-				23996E3F1DE6CCCB009A001F /* UIImageView+TCZ.swift in Sources */,
-				23996E441DE6CCCB009A001F /* TCZTableViewData.swift in Sources */,
-				23996E3E1DE6CCCB009A001F /* UIFont+TCZ.swift in Sources */,
+				3BFD9F211F53CFFD00B83FAA /* TCZTextFieldCell.swift in Sources */,
 				2339B5411DED7E640008461E /* TCZMainViewController.swift in Sources */,
-				23996E471DE6CCCB009A001F /* TCZImageTitleCell.swift in Sources */,
+				3BFD9F0C1F53CFFD00B83FAA /* TCZActionButton.swift in Sources */,
+				3BFD9F1F1F53CFFD00B83FAA /* TCZTitleTextFieldCell.swift in Sources */,
+				3BFD9F141F53CFFD00B83FAA /* TCZTableViewDelegate.swift in Sources */,
+				3BFD9F011F53CFFD00B83FAA /* UIButton+TCZ.swift in Sources */,
+				3BFD9F151F53CFFD00B83FAA /* TCZBaseTableCell.swift in Sources */,
+				3BFD9F181F53CFFD00B83FAA /* TCZImageTitleRightSubtitleCell.swift in Sources */,
+				3BFD9F1C1F53CFFD00B83FAA /* TCZTitleImageCell.swift in Sources */,
+				3BFD9F121F53CFFD00B83FAA /* TCZKitInputTextViewController.swift in Sources */,
 				23996DF61DE6CA7E009A001F /* ViewController.swift in Sources */,
-				23D70EDF1DE81E5100A7E147 /* UIButton+TCZ.swift in Sources */,
-				23996E481DE6CCCB009A001F /* TCZLeftTitleCell.swift in Sources */,
-				23D70EDD1DE81C0E00A7E147 /* TCZActionView.swift in Sources */,
-				23996E461DE6CCCB009A001F /* TCZBaseCell.swift in Sources */,
-				23996E3D1DE6CCCB009A001F /* TCZUIConfiguation.swift in Sources */,
-				23996E401DE6CCCB009A001F /* UILabel+TCZ.swift in Sources */,
-				23996E411DE6CCCB009A001F /* UITableView+TCZ.swift in Sources */,
+				3BFD9F101F53CFFD00B83FAA /* TCZBaseWebViewController.swift in Sources */,
 				23996DF41DE6CA7E009A001F /* AppDelegate.swift in Sources */,
-				23996E421DE6CCCB009A001F /* TCZStackView.swift in Sources */,
+				3BFD9F091F53CFFD00B83FAA /* TCZCancelableTask.swift in Sources */,
 				2339B5431DED7E730008461E /* TCZPlainViewController.swift in Sources */,
+				3BFD9F1D1F53CFFD00B83FAA /* TCZTitleSwitchCell.swift in Sources */,
+				3BFD9F021F53CFFD00B83FAA /* UIColor+TCZ.swift in Sources */,
+				3BFD9F171F53CFFD00B83FAA /* TCZImageTitleBottomSubtitleCell.swift in Sources */,
+				3BFD9F131F53CFFD00B83FAA /* TCZTableViewData.swift in Sources */,
+				3BFD9EFE1F53CFFD00B83FAA /* Date+TCZ.swift in Sources */,
+				3BFD9F221F53CFFD00B83FAA /* TCZSectionTitleView.swift in Sources */,
+				3BFD9F241F53CFFD00B83FAA /* TCZActionView.swift in Sources */,
+				3BFD9EFD1F53CFFD00B83FAA /* Array+TCZ.swift in Sources */,
 				23996E4A1DE6CCF8009A001F /* README.md in Sources */,
-				23996E431DE6CCCB009A001F /* TCZBaseTableViewController.swift in Sources */,
-				2391626C1DEAF49D000A541C /* TCZSectionTitleView.swift in Sources */,
-				23996E451DE6CCCB009A001F /* TCZTableViewDelegate.swift in Sources */,
+				3BFD9F201F53CFFD00B83FAA /* TCZTitleTextFieldImageCell.swift in Sources */,
+				3BFD9F051F53CFFD00B83FAA /* UIImageView+TCZ.swift in Sources */,
 				23996E4C1DE6CD5A009A001F /* TCZFirstViewController.swift in Sources */,
+				3BFD9F041F53CFFD00B83FAA /* UIFont+TCZ.swift in Sources */,
+				3BFD9F001F53CFFD00B83FAA /* String+TCZ.swift in Sources */,
+				3BFD9EFC1F53CFFD00B83FAA /* TCZConstant.swift in Sources */,
+				3BFD9F081F53CFFD00B83FAA /* UIView+TCZ.swift in Sources */,
+				3BFD9F0F1F53CFFD00B83FAA /* TCZBaseViewController.swift in Sources */,
+				3BFD9F061F53CFFD00B83FAA /* UILabel+TCZ.swift in Sources */,
+				3BFD9F0B1F53CFFD00B83FAA /* TCZAlertViewHelper.swift in Sources */,
+				3BFD9F191F53CFFD00B83FAA /* TCZTitleCell.swift in Sources */,
+				3BFD9F031F53CFFD00B83FAA /* UIDevice+TCZ.swift in Sources */,
+				3BFD9F0E1F53CFFD00B83FAA /* TCZBaseTableViewController.swift in Sources */,
+				3BFD9F1A1F53CFFD00B83FAA /* TCZTitleBottomSubtitleCell.swift in Sources */,
+				3BFD9F111F53CFFD00B83FAA /* TCZKitInputTextFieldController.swift in Sources */,
+				3BFD9F161F53CFFD00B83FAA /* TCZImageTitleCell.swift in Sources */,
+				3BFD9F231F53CFFD00B83FAA /* TCZStackView.swift in Sources */,
+				3BFD9F0D1F53CFFD00B83FAA /* TCZBaseNavigationController.swift in Sources */,
+				3BFD9F1B1F53CFFD00B83FAA /* TCZTitleRightSubtitleCell.swift in Sources */,
+				3BFD9F071F53CFFD00B83FAA /* UITableView+TCZ.swift in Sources */,
+				3BFD9F0A1F53CFFD00B83FAA /* TCZActionSheetHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,9 +11,9 @@ import UIKit
 class TCZSectionTitleView: UITableViewHeaderFooterView {
 
     lazy var titleButton: UIButton = {
-        let button = UIButton.tczButton(bgImage: nil)
+        let button = UIButton.tczButton(bgImage: nil, heBgImage: nil)
         button.setTitleColor(UIColor.black, for: .normal)
-        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: TCZConstant.kLeftEdge, bottom: 0, right: TCZConstant.kLeftEdge)
+        button.contentEdgeInsets = UIEdgeInsets(top: 0, left: kLeftEdge, bottom: 0, right: kLeftEdge)
         button.contentHorizontalAlignment = .left
         return button
     }()

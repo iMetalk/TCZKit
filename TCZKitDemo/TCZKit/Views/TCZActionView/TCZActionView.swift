@@ -25,18 +25,18 @@ class TCZActionView: UIView {
     }
     
     func configureActionView() {
-        button = UIButton.tczButton(bgImage: UIImage(named: "redBg"))
+        button = UIButton.tczButton(bgImage: UIImage(named: "redBg"), heBgImage: nil)
         
         button.addTarget(self, action:  #selector(TCZActionView.buttonDidClick), for: .touchUpInside)
-        button.titleLabel?.font = UIFont.tczSystemFontWitSize(fontSize: 18)
+        button.titleLabel?.font = UIFont.tcz_systemFontWithSize(size: 18)
         addSubview(button)
         
-//        button.snp.makeConstraints { (make) in
-//            make.centerY.equalTo(self)
-//            make.height.equalTo(kItemHeight)
-//            make.left.equalTo(TCZConstant.kLeftEdge)
-//            make.right.equalTo(-TCZConstant.kLeftEdge)
-//        }
+        button.snp.makeConstraints { (make) in
+            make.centerY.equalTo(self)
+            make.height.equalTo(kItemHeight)
+            make.left.equalTo(kLeftEdge)
+            make.right.equalTo(-kLeftEdge)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

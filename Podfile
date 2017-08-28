@@ -6,6 +6,8 @@ target 'TCZKitDemo' do
   use_frameworks!
 
   pod 'SnapKit', '~> 3.0.2'
+  pod 'IQKeyboardManagerSwift', '4.0.8'
+  pod 'PKHUD', '4.2.3'
 
   # Pods for TCZKitDemo
 

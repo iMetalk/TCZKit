@@ -8,8 +8,7 @@
 
 import UIKit
 
-
-class TCZBaseTableViewController: UIViewController {
+class TCZBaseTableViewController: TCZBaseViewController {
     
     var tableView: UITableView!
     
@@ -34,7 +33,7 @@ class TCZBaseTableViewController: UIViewController {
     /// Is open edit mode delete
     var isOpendDelete: Bool = false
     
-    /// If tableView is plain, you must user dataArray, or you must use groupDataArray, as tableView dataSource
+    /// If tableView is plain, you must use dataArray, or you must use groupDataArray, as tableView dataSource
     var dataArray = [TCZTableViewData]()
     var groupDataArray = [Array<TCZTableViewData>]()
     
@@ -49,13 +48,13 @@ class TCZBaseTableViewController: UIViewController {
     var headerDelegate: TCZTableViewHeaderable?
     
     
-    // MARK: ViewController life cycle
+    // MARK: - ViewController life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
     }
     
-    // MARK: Public
+    // MARK: - Public
     // SubClass must impleation this method
     func loadData(isGroup: Bool) {
         self.isGroup = isGroup
@@ -78,7 +77,7 @@ class TCZBaseTableViewController: UIViewController {
         }
     }
     
-    // MARK: Private
+    // MARK: - Private
     private func registerCells() {
         for cellName in cellIndentifierSet {
            tableView.register(NSClassFromString(cellName), forCellReuseIdentifier: cellName)
@@ -101,16 +100,25 @@ class TCZBaseTableViewController: UIViewController {
     tableView.register(NSClassFromString(footerSectionType.sectionViewName), forHeaderFooterViewReuseIdentifier: footerSectionType.sectionViewName)
     }
     
-    // MARK - CreateUI
+    // MARK: - CreateUI
     private func createUI() {
         tableView = UITableView.tczTableView(frame: self.view.bounds, isGroup: isGroup)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         if estimatedRowHeight > 0 {
             tableView.estimatedRowHeight = estimatedRowHeight
             tableView.rowHeight = UITableViewAutomaticDimension
         }
         view.addSubview(tableView)
+        
+        self.updateTableViewConstraint()
+    }
+    
+    func updateTableViewConstraint() {
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(UIEdgeInsetsMake(0, 0, 0, 0))
+        }
     }
 
 }
@@ -135,7 +143,7 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
         let aItem: TCZTableViewData = dataAtIndexPath(indexPath: indexPath)
 
         let cell = tableView.dequeueReusableCell(withIdentifier: aItem.type.cellName, for: indexPath)
-        if let baseCell = cell as? TCZBaseCell{
+        if let baseCell = cell as? TCZBaseTableCell{
             baseCell.tczConfigureData(aItem: aItem)
             
             tczCellReuse(cell: baseCell, atIndexPath: indexPath, item: aItem)
@@ -213,16 +221,20 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        tczDidSelect(atIndexPath: indexPath)
     }
     
-    /// MARK: SubClass can implementation
-    func tczCellReuse(cell: TCZBaseCell, atIndexPath: IndexPath, item: TCZTableViewData) {}
+    //MARK: - SubClass can implementation
+    func tczCellReuse(cell: TCZBaseTableCell, atIndexPath: IndexPath, item: TCZTableViewData) {}
     
     func tczHeaderSectionView(sectionView: UIView) {}
     
     func tczFooterSectionView(sectionView: UIView) {}
     
     func tczDidDelete(atIndexPath indexPath: IndexPath) {}
+    
+    func tczDidSelect(atIndexPath indexPath: IndexPath) {}
     
     func tczDeleteLocalData(atIndexPath indexPath: IndexPath, animation: UITableViewRowAnimation) {
         if isGroup {
@@ -247,7 +259,7 @@ extension TCZBaseTableViewController: UITableViewDelegate, UITableViewDataSource
         }
     }
     
-    /// MARK: Helper
+    // MARK: - Helper
     func dataAtIndexPath(indexPath: IndexPath) -> TCZTableViewData {
         let aItem: TCZTableViewData!
         if isGroup {

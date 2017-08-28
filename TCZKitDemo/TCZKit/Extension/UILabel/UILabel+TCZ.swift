@@ -8,10 +8,7 @@
 
 import UIKit
 
-
-// MARK: - Init
 extension UILabel {
-    
     
     /// Create label
     ///
@@ -19,25 +16,31 @@ extension UILabel {
     ///   - text: The label text
     ///   - font: The label font
     /// - Returns: UILabel
-    class func tczLabel(text: String?, font: UIFont?) -> UILabel {
+    class func tczLabel(text: String?, font: UIFont?, color: UIColor?) -> UILabel {
+        
         let label = UILabel()
         if let aText = text {
             label.text = aText;
         }
         if let aFont = font {
             label.font = aFont;
+        }else{
+            label.font = UIFont.tcz_systemFontWithSize(size: kTitleFontSize)
         }
-        else{
-            label.font = UIFont.tczSystemFontWitSize(fontSize: TCZConstant.kFontSize)
+        if let aColor = color {
+            label.textColor = aColor
+        }else{
+            label.textColor = UIColor.black
         }
         return label
     }
-    
     
     /// Create labe not contain text and font
     ///
     /// - Returns: UILable
     class func tczLabel() -> UILabel {
-        return self.tczLabel(text: nil, font: nil)
+        
+        return self.tczLabel(text: nil, font: nil, color: nil)
     }
+    
 }
